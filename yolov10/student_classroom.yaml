@@ -1,0 +1,14 @@
+# 绝对路径方式（推荐）
+path: E:/PycharmProjects/condaProjects/yolov10SCD/dataset
+train: train/images
+val: valid/images
+test: test/images
+
+# 统一类别编号
+names:
+  0: student_standing
+  1: student_raising_hand
+  2: student_sleeping
+  3: student_reading
+  4: student_writing
+  5: student_chatting
