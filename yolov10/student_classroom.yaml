@@ -1,14 +1,22 @@
-# 绝对路径方式（推荐）
+# YOLOv10 SCB-Dataset5配置
 path: E:/PycharmProjects/condaProjects/yolov10SCD/dataset
 train: train/images
-val: valid/images
-test: test/images
+val: valid/images  # 原始结构为 valid，不是 val
 
-# 统一类别编号
+# 类别定义
 names:
-  0: student_standing
-  1: student_raising_hand
-  2: student_sleeping
-  3: student_reading
-  4: student_writing
-  5: student_chatting
+  0: sit-forward
+  1: read
+  2: write
+  3: hand-raising
+  4: sleep
+  5: talk
+
+# YOLO自身增强参数
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+
+# NMS参数
+nms_conf: 0.25
+nms_iou: 0.45
